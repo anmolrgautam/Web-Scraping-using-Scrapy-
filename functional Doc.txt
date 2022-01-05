@@ -1,0 +1,12 @@
+# Web-Scraping-using-Scrapy-
+
+The functionality of this repository is to scrap webpage of a product on ecommerce websites and save data into csv file. Scrapy a open-source python tool is used
+to scrap data from webpage.
+
+The functionaly of python notebook is given below-
+A) AmazonToCsv is a spider class that Scrapy uses to scrap the data from a webpage.
+  1- start_urls is the collection of urls on which Scrapy sends the request.
+  2- custom_settings is the settings in which feed and pipeline are defined to feed the data into csv file and yield the data into pipeline for each url respectively.
+  3- parse function accepts the response of the Scrapy request and scrap data from responce with the help of xpath of desired data in webpage.
+  
+ B) AmazonPipeline accepts data from Scrapy and save it to csv file.
